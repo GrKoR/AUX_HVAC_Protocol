@@ -213,22 +213,22 @@
 | 4  | ?     | `0x00` | `0x00` | | ?     | `0x00` |
 | 5  | ?     | `0x00` | `0x00` | | ?     | `0x00` |
 | 6  | [LEN](#packet_header_b06)   | `0x02` | `0x02` | | [LEN](#packet_header_b06)   | `0x0F` |
-| 7  | ?     | `0x00` |
-| 8  | CMD   | `0x21` | `0x11` | | CMD   | `0x01` |
-| 9  | ?X    | `0x01` | `0x01` | | ?X    | `0x01` |
+| 7  | ?     | `0x00` | `0x00` | | ?     | `0x00` |
+| 8  | [CMD](#packet_type_cmd_b08)   | `0x21` | `0x11` | | [CMD](#packet_type_cmd_b08)   | `0x01` |
+| 9  | [?X](#packet_type_cmd_b09)    | `0x01` | `0x01` | | [?X](#packet_type_cmd_b09)    | `0x01` |
 | 10 | [CRC1](#packet_crc)  | `0x1B` | `0x2B` | |       | `0x97` |
 | 11 | [CRC2](#packet_crc)  | `0x7E` | `0x7E` | |       | `0x00` |
-| 12 |       |        |        | |       | `0x02` |
-| 13 |       |        |        | |       | `0x60` |
-| 14 |       |        |        | |       | `0x00` |
-| 15 |       |        |        | |       | `0x20` |
-| 16 |       |        |        | |       | `0x00` |
-| 17 |       |        |        | |       | `0x00` |
-| 18 |       |        |        | |       | `0x00` |
-| 19 |       |        |        | |       | `0x00` |
-| 20 |       |        |        | |       | `0x00` |
-| 21 |       |        |        | |       | `0x00` |
-| 22 |       |        |        | |       | `0x00` |
+| 12 |       |        |        | | [?](#packet_type_cmd_b10plus)     | `0x02` |
+| 13 |       |        |        | | [?](#packet_type_cmd_b10plus)     | `0x60` |
+| 14 |       |        |        | | [?](#packet_type_cmd_b10plus)     | `0x00` |
+| 15 |       |        |        | | [?](#packet_type_cmd_b10plus)     | `0x20` |
+| 16 |       |        |        | | [?](#packet_type_cmd_b10plus)     | `0x00` |
+| 17 |       |        |        | | [?](#packet_type_cmd_b10plus)     | `0x00` |
+| 18 |       |        |        | | [?](#packet_type_cmd_b10plus)     | `0x00` |
+| 19 |       |        |        | | [?](#packet_type_cmd_b10plus)     | `0x00` |
+| 20 |       |        |        | | [?](#packet_type_cmd_b10plus)     | `0x00` |
+| 21 |       |        |        | | [?](#packet_type_cmd_b10plus)     | `0x00` |
+| 22 |       |        |        | | [?](#packet_type_cmd_b10plus)     | `0x00` |
 | 23 |       |        |        | | [CRC1](#packet_crc)  | `0x94` |
 | 24 |       |        |        | | [CRC2](#packet_crc)  | `0xFD` |
 
