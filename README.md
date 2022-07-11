@@ -752,21 +752,21 @@ fanSpeed
 | 5  | ?     | `0x00` |
 | 6  | [LEN](#packet_header_b06)   | `0x0F` |
 | 7  | ?     | `0x00` |
-| 8  | ?X    | `0x01` |
-| 9  | CMD   | `0x11` |
-| 10 | TS    | `0x97` |
-| 11 | SL    | `0x00` |
-| 12 | Td    | `0x01` |
-| 13 | SP    | `0x60` |
-| 14 | TB    | `0x00` |
-| 15 | MO    | `0x20` |
-| 16 |       | `0x00` |
-| 17 |       | `0x00` |
-| 18 | EN    | `0x20` |
-| 19 |       | `0x00` |
-| 20 | FL    | `0x00` |
-| 21 |       | `0x00` |
-| 22 | Tsd   | `0x00` |
+| 8  | [?X](#packet_cmd_11_b08)    | `0x01` |
+| 9  | [CMD](#packet_cmd_11_b09)   | `0x11` |
+| 10 | [TS](#packet_cmd_11_b10)    | `0x97` |
+| 11 | [SL](#packet_cmd_11_b11)    | `0x00` |
+| 12 | [Td](#packet_cmd_11_b12)    | `0x01` |
+| 13 | [SP+TH](#packet_cmd_11_b13)    | `0x60` |
+| 14 | [TB](#packet_cmd_11_b14)    | `0x00` |
+| 15 | [MO](#packet_cmd_11_b15)    | `0x20` |
+| 16 | [?](#packet_cmd_11_b16)      | `0x00` |
+| 17 | [?](#packet_cmd_11_b17)     | `0x00` |
+| 18 | [EN](#packet_cmd_11_b18)    | `0x20` |
+| 19 | [?](#packet_cmd_11_b19)     | `0x00` |
+| 20 | [FL](#packet_cmd_11_b20)    | `0x00` |
+| 21 | [?](#packet_cmd_11_b21)     | `0x00` |
+| 22 | [Tsd](#packet_cmd_11_b22)   | `0x00` |
 | 23 | [CRC1](#packet_crc)         | `0x00` |
 | 24 | [CRC2](#packet_crc)         | `0x00` |
 
