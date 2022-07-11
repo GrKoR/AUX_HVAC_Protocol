@@ -1064,10 +1064,10 @@ fanSpeed
 | 5  | ?     | `0x00` |
 | 6  | [LEN](#packet_header_b06)   | `0x04` |
 | 7  | ?     | `0x00` |
-| 8  | ?X    | `0x01` |
-| 9  | CMD   | `0x01` |
-| 10 | sm1   | `0x94` |
-| 11 | sm2   | `0xFD` |
+| 8  | [?X](#packet_cmd_01_b08)    | `0x01` |
+| 9  | [CMD](#packet_cmd_01_b09)   | `0x01` |
+| 10 | [sm1](#packet_cmd_01_b10)   | `0x94` |
+| 11 | [sm2](#packet_cmd_01_b11)   | `0xFD` |
 | 12 | [CRC1](#packet_crc)         | `0xA4` |
 | 13 | [CRC2](#packet_crc)         | `0x00` |
 
