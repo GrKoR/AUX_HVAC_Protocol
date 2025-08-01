@@ -729,9 +729,38 @@ fanSpeed
 <span id="packet_cmd_21_b29"/>
 
 ##### Байт 29
-не расшифрован. Встречался только `0x00`.
+Похоже на байт с номером ошибки.
+При нормальной работе `0x00`.
+Когда кондиционер выдает на дисплее ошибку `E5`, в этом байте появляется значение `0x07`. Это произошло при запуске внутреннего блока кондиционера без наружного.
 
+В сети нашел такие коды, которые вроде бы ложатся на наш случай:
+> **E1:** Plastic temp sensor is abnormal. The display precedence level: 2
+>
+> **E2:** Copper temp sensor is abnormal (outdoor). The display precedence level: 4
+>
+> **E3:** Copper temp sensor is abnormal (indoor). The display precedence level: 3
+>
+> **E4:** PG motor feedback is abnormal. The display precedence level: 1
+>
+> **E5:** Abnormality of outdoor unit
+>
+> **E6:** Over-current oprotection
+>
+> **E7:** External feedback failure
+>
+> **E8:** Overheat protection
+>
+> **E9:** Water pump failure
+>
+> **dF:** Indicates “dF”or defrosting indicator displays
+>
+> **L1:** Failure of coiled pipe sensor
+>
+> **L2:** Failure of room temperature sensor
+>
+> **L6:** Without feedback of internal fan motor
 
+Нужны дальнейшие эксперименты, чтобы понять, каким кодам ошибок соответствуют какие значения байта.
 
 <span id="packet_cmd_21_b30"/>
 
